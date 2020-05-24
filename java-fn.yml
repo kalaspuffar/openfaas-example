@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://192.168.99.128:31112
+functions:
+  java-fn:
+    lang: java11
+    handler: ./java-fn
+    image: localhost:5000/java-fn:latest
+
