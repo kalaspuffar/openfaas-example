@@ -42,6 +42,7 @@ kubectl -n openfaas create secret generic basic-auth --from-literal=basic-auth-u
 Next we install openfaas telling the system to use the basic auth information.
 ```
 helm upgrade openfaas --install openfaas/openfaas --namespace openfaas --set functionNamespace=openfaas-fn --set basic_auth=true
+```
 
 We need to configure the client tooling by login into our new installation. Password sent via the terminal standard in is recommened.
 ```
